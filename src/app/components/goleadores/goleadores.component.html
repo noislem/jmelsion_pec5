@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>Goleadores</h1>
+    <ul class="list-group">
+        <a *ngFor="let goleador of goleadores"
+            [routerLink]="['/jugador', goleador.player.id]" class="list-group-item list-group-item-action animate__animated animate__bounce animate__fadein">
+            {{goleador.player.name}} - {{goleador.numberOfGoals}}
+        </a>
+    </ul>
+</div>
